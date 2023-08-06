@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Img/todo_fnaf.jpg">
+    <link rel="stylesheet" href="./Estilo/estilos.css">
+    <link rel="stylesheet" href="./Estilo/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script>
+        function enviar(){
+            alert("tus datos se estan enviando......")
+    }
+    </script>   
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Img/todo_fnaf.jpg" alt="logo">
+        <h1>Registro</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="./index.html">Descripcion</a></li>
+                <li><a href="./Inicio.html">Descargar</a></li>
+                <li><a href="./Login.html">Iniciar Sesion</a></li>
+                <li><a class="activo" href="./Registro.html">Registrame</a></li>
+                <li><a href="./busqueda.html">Busqueda</a></li>
+            </ul>
+        <div>
+            <div>
+                <div class="contenido">
+                    <div class="formulario">
+                    </div>
+
+                   <form action="#" class="form-basico">
+                    <div class="entrada">
+                        <label>Tipo lista desplegable</label>
+                        <select name="select">
+                            <option>Tarjeta de Identidad</option>
+                            <option>Cedula</option>
+                            <option>Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="entrada">
+                        <label>Cedula</label>
+                        <input type="number" class="campo"required >
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>  
+                            </span>                    
+                        </div>
+                    <div class="entrada">
+                        <label>Nombre completo</label>
+                        <input type="text" class="campo" required>
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>  
+                            </span>
+
+                    </div>
+                    <div class="entrada">
+                        <label>Fecha de nacimiento</label>
+                        <input type="date">
+                    </div>
+                    <div class="entrada">
+                        <label>Correo</label>
+                        <input type="email" class="campo"  required>
+                        <span class="icon" class="campo" ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>  
+                            </span>
+                    </div>
+                    <div class="entrada">
+                        <label>Contraseña</label>
+                        <input type="password" class="campo" required>
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>  
+                            </span>                   
+                    </div>
+                    <div class="entrada">
+                        <input type="checkbox" name="condiciones" value="aceptado" /> He leido y acepto las condiciones del contrato <br/><br/>
+                    </div>
+                    <div class="entrada">
+                        <input type="button" value="Enviar" onclick="enviar()">
+                    </div>
+                   </form>
+                    
+                <div>
+    </header>   
+       
+</body>
+
+</html>

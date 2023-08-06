@@ -1,0 +1,12 @@
+/*--------
+Estilo index
+----------*/
+.Imagen_d{
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    border-radius: 10%;
+    width: 350px;
+    height: 350px;
+    padding-top: 20px;
+}
