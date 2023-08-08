@@ -82,3 +82,25 @@ ul li a.activo{
 ul li a:hover{
     opacity: 1;
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+.footer {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+.footer p{
+    text-align: center;
+    margin: 0;
+ }
+ .img-footer{
+    margin: auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+}
