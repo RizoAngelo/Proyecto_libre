@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Img/todo_fnaf.jpg">
     <link rel="stylesheet" href="./Estilo/estilos.css">
-    <link rel="stylesheet" href="./Estilo/index.css">
+    <link rel="stylesheet" href="./Estilo/busqueda.css">
     <title>Busqueda</title>
+    <script>
+        function Buscar(){
+            alert("Estamos Buscando Por favor espere........")
+    }
+    </script>   
 </head>
 <body>
     <header>
@@ -20,8 +25,22 @@
                 <li><a class="activo" href="./busqueda.html">Busqueda</a></li>
             </ul>
         <div>
-    </header>   
-       
+    </header>
+        <div class="contenedor">
+          <input type="text" id="searchInput" placeholder="Ingresa tu busqueda">
+          <button onclick="Buscar()">Buscar</button>
+        </div>
+        <footer>
+            <div class="footer">
+              <p>© 2023 FNAF - Todos los derechos reservados. <br>
+                Nos puedes contactar por: <br>
+                <img class="img-footer" src="./Img/Instagram-Icon.png.webp" alt=""><br>
+                <a href="https://www.instagram.com/">@Fnaf-Intagram</a><br>
+                <img class="img-footer" src="./Img/fb_icon_325x325.png" alt=""><br>
+                <a href="https://www.facebook.com/">@Fnaf-facebbok</a><br>
+              </p>
+            </div>
+        </footer>
 </body>
 
 </html>
