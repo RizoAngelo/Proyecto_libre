@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="./Estilo/busqueda.css">
     <title>Busqueda</title>
     <script>
-        function Buscar(){
-            alert("Estamos Buscando Por favor espere........")
+        async function BuscarMipalabras(event){
+            event.preventDefault();
+
+            const palabrasclaves = document.getElementById("Buscar").value.tolewerCase();
+            if(palabrasclaves = "FIVE NIGHTS AT FREDDYS 1"){
+                resultadoContenedor.style.display = "block";
+                resultadoContenedor.style.display = "";
+                <div id="ReS">
+                    <img src="./Img/fnaf1.jpg" alt="">
+                    <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" class="boton"><i class="fa-brands fa-steam"></i>Steam</a>
+                </div>
+                
     }
     </script>   
 </head>
@@ -25,10 +35,13 @@
                 <li><a class="activo" href="./busqueda.html">Busqueda</a></li>
             </ul>
         <div>
+
     </header>
         <div class="contenedor">
-          <input type="text" id="searchInput" placeholder="Ingresa tu busqueda">
-          <button onclick="Buscar()">Buscar</button>
+        <form action="form-basic" action="#" onsubmit="return BuscarMipalabras(event);">
+        <input type="text" id="searchInput" placeholder="Ingresa tu busqueda">
+        <button onclick="Buscar()">Buscar</button>
+        </form>
         </div>
         <footer>
             <div class="footer">
