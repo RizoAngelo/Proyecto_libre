@@ -26,7 +26,7 @@ Estilo Login
     vertical-align: top;
     padding: 12px 25px;
 }
-.form-basico input[type=email], 
+.form-basico input[type=text], 
 .form-basico input[type=password]{
     color: #5f5f5f;
     box-sizing: border-box;
@@ -35,7 +35,7 @@ Estilo Login
     border: 1px solid #dbdbdb;
     border-radius: 3px;
 }
-.form-basico input[type=button] {
+.boton {
     display: block;
     border-radius: 2px;
     background-color: rgb(19, 19, 59);
@@ -48,3 +48,14 @@ Estilo Login
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
 }
+
+.x:valid + .icon  {
+    color: green;
+    border-color:green;
+    border-radius: 20px;
+  }
+  .x:invalid + .icon {
+    color: rgb(227, 14, 14);
+    border-color:red;
+  }
+  

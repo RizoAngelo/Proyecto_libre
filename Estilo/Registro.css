@@ -30,7 +30,6 @@ Estilo Registro
 }
 
 .form-basico input[type=text],
-.form-basico input[type=email], 
 .form-basico input[type=password]{
     color: #050505;
     box-sizing: border-box;
@@ -40,7 +39,7 @@ Estilo Registro
     border-radius: 3px;
 }
 
-.form-basico input[type=button] {
+.boton {
     display: block;
     border-radius: 2px;
     background-color: rgb(19, 19, 59);
