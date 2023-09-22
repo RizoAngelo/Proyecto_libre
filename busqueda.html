@@ -10,13 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Busqueda</title>
     <script>
+         function actualizarTexto() {
+        const filtroSeleccionado = document.getElementById("filtro");
+        const buscarInput = document.getElementById("buscar");
+        buscarInput.value = filtroSeleccionado.value;
+    }
+
+    actualizarTexto();
+
+
         async function buscarPalabra(event) {
         event.preventDefault();
     
         const palabraABuscar = document.getElementById("buscar").value.toLowerCase();
         const resultadoContenedor = document.getElementById("resultado-contenedor");
     
-        if (palabraABuscar ==="fnaf1") {
+        if (palabraABuscar ==="fnaf 1") {
             resultadoContenedor.style.display = "block";
             resultadoContenedor.innerHTML = `
             <p><h1>FIVE NIGHTS AT FREDDYS</h1>
@@ -26,7 +35,7 @@
             <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" class="S"><i class="fa-brands fa-steam"></i>Steam</a>     </p>
 
             `;
-        } else if (palabraABuscar ==="fnaf2") {
+        } else if (palabraABuscar ==="fnaf 2") {
             resultadoContenedor.style.display = "block";
             resultadoContenedor.innerHTML = `
             <h1>FIVE NIGHTS AT FREDDYS 2</h1>
@@ -40,7 +49,7 @@
 
             `;
             
-        } else if (palabraABuscar ==="fnaf3") {
+        } else if (palabraABuscar ==="fnaf 3") {
             resultadoContenedor.style.display = "block";
             resultadoContenedor.innerHTML = `
             <h1>FIVE NIGHTS AT FREDDYS 3</h1>
@@ -52,7 +61,7 @@
                             
 
             `;
-         } else if (palabraABuscar ==="fnaf4") {
+         } else if (palabraABuscar ==="fnaf 4") {
             resultadoContenedor.style.display = "block";
             resultadoContenedor.innerHTML = `
             
@@ -84,12 +93,25 @@
     </header>
     <div class="contenido">
         <form class="form-basico" action="#" onsubmit="return buscarPalabra(event);">
-         
-         <div class="entrada">
-             <label>Buscador</label>
-             <input type="text"  name="buscar" id="buscar" required>
-             <button class="boton" type="submit">BUSCAR</button>
-         </div>
+            <form class="form-basico" action="#" onsubmit="return buscarPalabra(event);">
+                <div class="entrada">
+                    <label for="filtro">Selecciona un juego:</label>
+                    <select id="filtro" name="filtro" onchange="actualizarTexto()">
+                        <option value="">seleccione</option>
+                        <option value="fnaf 1">FNAF 1</option>
+                        <option value="fnaf 2">FNAF 2</option>
+                        <option value="fnaf 3">FNAF 3</option>
+                        <option value="fnaf 4">FNAF 4</option>
+                    </select>
+                </div>
+                <div class="entrada">
+                    <label for="buscar">Buscador:</label>
+                    <input type="text" name="buscar" id="buscar" required>
+                    <button class="boton" type="submit">BUSCAR</button>
+                </div>
+            </form>
+        
+        
      </div>
      <div id="resultado-contenedor"></div>
             
